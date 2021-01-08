@@ -41,20 +41,20 @@ bool double_list_add_elem_at_position(double_list_t *front_ptr, double elem
 , unsigned int position)
 {
     double_list_t new;
+    double_list_t *prev;
     double_list_t *tmp = front_ptr;
 
     for (unsigned ctr = 0; ctr < position; ctr += 1) {
         if (*tmp == NULL)
-            return (false);
-        tmp = &((*tmp)->next);
+            return (printf("Wait what ?!\n"), false);
+        prev = tmp;
+        tmp = &(*tmp)->next;
     }
     new = malloc(sizeof(doublelist_node_t));
     if (new == NULL)
         return (false);
     new->value = elem;
-    new->next = NULL;
-    if (*tmp != NULL)
-        new->next = (*tmp)->next;
-    *tmp = new;
+    new->next = (*prev)->next;
+    (*prev)->next = new;
     return (true);
 }
