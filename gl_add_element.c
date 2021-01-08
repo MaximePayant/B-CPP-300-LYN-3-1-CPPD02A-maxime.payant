@@ -44,6 +44,8 @@ bool list_add_elem_at_position(list_t *front_ptr, void *elem
     list_t *prev;
     list_t *tmp = front_ptr;
 
+    if (position == 0)
+        return (list_add_elem_at_front(front_ptr, elem));
     for (unsigned ctr = 0; ctr < position; ctr += 1) {
         if (*tmp == NULL)
             return (false);
@@ -56,6 +58,5 @@ bool list_add_elem_at_position(list_t *front_ptr, void *elem
     new->value = elem;
     new->next = (*prev)->next;
     (*prev)->next = new;
-    return (true);
     return (true);
 }

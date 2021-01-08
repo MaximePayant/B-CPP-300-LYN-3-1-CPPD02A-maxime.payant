@@ -5,6 +5,8 @@
 ** add_element.c
 */
 
+#include <stdio.h>
+
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -44,6 +46,8 @@ bool double_list_add_elem_at_position(double_list_t *front_ptr, double elem
     double_list_t *prev;
     double_list_t *tmp = front_ptr;
 
+    if (position == 0)
+        return (double_list_add_elem_at_front(front_ptr, elem));
     for (unsigned ctr = 0; ctr < position; ctr += 1) {
         if (*tmp == NULL)
             return (false);
