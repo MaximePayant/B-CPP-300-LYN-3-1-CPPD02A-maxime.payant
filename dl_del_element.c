@@ -1,5 +1,7 @@
 /*
-** ShipWreck engine, 2020
+** EPITECH PROJECT, 2021
+** CPP_D02A
+** File description:
 ** del_element.c
 */
 
@@ -38,7 +40,8 @@ bool double_list_del_elem_at_back(double_list_t *front_ptr)
     return (true);
 }
 
-bool double_list_del_elem_at_position(double_list_t *front_ptr, unsigned int position)
+bool double_list_del_elem_at_position(double_list_t *front_ptr
+, unsigned int position)
 {
     double_list_t *prev = front_ptr;
     double_list_t tmp;

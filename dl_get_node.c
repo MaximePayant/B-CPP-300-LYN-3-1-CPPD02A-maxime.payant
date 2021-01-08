@@ -1,5 +1,7 @@
 /*
-** ShipWreck engine, 2020
+** EPITECH PROJECT, 2021
+** CPP_D02A
+** File description:
 ** get_node.c
 */
 
@@ -7,7 +9,8 @@
 
 #include "double_list.h"
 
-doublelist_node_t *double_list_get_first_node_with_value(double_list_t list, double value)
+doublelist_node_t *double_list_get_first_node_with_value(double_list_t list
+, double value)
 {
     double_list_t tmp = list;
 

@@ -1,5 +1,7 @@
 /*
-** ShipWreck engine, 2020
+** EPITECH PROJECT, 2021
+** CPP_D02A
+** File description:
 ** add_element.c
 */
 

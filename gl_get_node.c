@@ -1,5 +1,7 @@
 /*
-** ShipWreck engine, 2020
+** EPITECH PROJECT, 2021
+** CPP_D02A
+** File description:
 ** get_node.c
 */
 
@@ -7,7 +9,8 @@
 
 #include "generic_list.h"
 
-node_t *list_get_first_node_with_value(list_t list, void *value, value_comparator_t val_comp)
+node_t *list_get_first_node_with_value(list_t list, void *value
+, value_comparator_t val_comp)
 {
     list_t tmp = list;
 
