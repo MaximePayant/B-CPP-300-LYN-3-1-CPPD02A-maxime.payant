@@ -14,7 +14,6 @@ bool list_add_elem_at_front(list_t *front_ptr, void *elem)
 
     if (new == NULL)
         return (false);
-    printf("ouhouh\n");
     new->value = elem;
     new->next = *front_ptr;
     *front_ptr = new;
@@ -45,7 +44,7 @@ bool list_add_elem_at_position(list_t *front_ptr, void *elem
 
     for (unsigned ctr = 0; ctr < position; ctr += 1) {
         if (*tmp == NULL)
-            return (printf("Wait what ?!\n"), false);
+            return (false);
         prev = tmp;
         tmp = &(*tmp)->next;
     }

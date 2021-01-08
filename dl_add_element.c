@@ -3,8 +3,6 @@
 ** add_element.c
 */
 
-#include <stdio.h>
-
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -46,7 +44,7 @@ bool double_list_add_elem_at_position(double_list_t *front_ptr, double elem
 
     for (unsigned ctr = 0; ctr < position; ctr += 1) {
         if (*tmp == NULL)
-            return (printf("Wait what ?!\n"), false);
+            return (false);
         prev = tmp;
         tmp = &(*tmp)->next;
     }
