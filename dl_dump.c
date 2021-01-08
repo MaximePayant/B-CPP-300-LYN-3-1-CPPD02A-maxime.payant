@@ -3,6 +3,7 @@
 ** dump.c
 */
 
+#include <unistd.h>
 #include <stdio.h>
 
 #include "double_list.h"

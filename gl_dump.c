@@ -3,6 +3,8 @@
 ** dump.c
 */
 
+#include <unistd.h>
+
 #include "generic_list.h"
 
 void list_dump(list_t list, value_displayer_t val_disp)
